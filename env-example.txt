@@ -1,0 +1,19 @@
+# Configurações do Banco de Dados PostgreSQL
+# Copie este conteúdo para um arquivo .env.local na raiz do projeto
+
+# URL principal do banco de dados
+POSTGRES_URL="postgresql://usuario:senha@localhost:5432/nome_do_banco"
+
+# URL para conexões não-pooling (necessário para Vercel)
+POSTGRES_URL_NON_POOLING="postgresql://usuario:senha@localhost:5432/nome_do_banco"
+
+# Exemplo para Neon (https://neon.tech):
+# POSTGRES_URL="postgresql://[user]:[password]@[host]/[database]?sslmode=require"
+# POSTGRES_URL_NON_POOLING="postgresql://[user]:[password]@[host]/[database]?sslmode=require&connect_timeout=300"
+
+# Exemplo para Supabase (https://supabase.com):
+# POSTGRES_URL="postgresql://postgres:[password]@db.[project-ref].supabase.co:5432/postgres"
+# POSTGRES_URL_NON_POOLING="postgresql://postgres:[password]@db.[project-ref].supabase.co:5432/postgres"
+
+# Configurações adicionais
+NODE_ENV="development"
